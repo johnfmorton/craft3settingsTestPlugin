@@ -1,0 +1,25 @@
+{#
+/**
+ * SettingTest plugin for Craft CMS 3.x
+ *
+ * SettingTest Settings.twig
+ *
+ * @author    John F Morton
+ * @copyright Copyright (c) 2017 John F Morton
+ * @link      http://johnfmorton.com
+ * @package   SettingTest
+ * @since     0.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("johnfmorton\\settingtest\\assetbundles\\settingtest\\SettingTestAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someField',
+    name: 'someField',
+    value: settings['someField']})
+}}

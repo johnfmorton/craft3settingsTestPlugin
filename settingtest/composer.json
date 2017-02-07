@@ -1,0 +1,41 @@
+{
+    "name": "johnfmorton/settingtest",
+    "description": "Test of settings page.",
+    "type": "craft-plugin",
+    "version": "1.2.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "settingtest"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John F Morton",
+            "homepage": "http://johnfmorton.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+          "johnfmorton\\settingtest\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "SettingTest",
+        "handle": "settingTest",
+        "version": "0.0.1",
+        "schemaVersion": "0.0.1",
+        "hasSettings": true,
+        "hasCpSection": true,
+        "developer": "John F Morton",
+        "developerUrl": "http://johnfmorton.com",
+        "description": "Test of settings page.",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "class": "johnfmorton\\settingtest\\SettingTest"
+    }
+}
